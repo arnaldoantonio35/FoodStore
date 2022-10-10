@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.foodstore">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/foodstore2"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/foodstore2"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FoodStore">
+        <activity
+            android:name=".TelaInicialActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CardapioActivity"
+            android:exported="false"
+            android:label="@string/title_activity_cardapio"
+            android:theme="@style/Theme.FoodStore.NoActionBar" />
+        <activity
+            android:name=".CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.FoodStore.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
